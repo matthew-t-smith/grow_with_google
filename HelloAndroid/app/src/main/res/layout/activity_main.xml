@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.helloandroid.MainActivity"
+    android:orientation="vertical"
+    android:background="#02b3e4" >
+    <!-- This is Udacity's blue -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Udacity"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        android:textColor="@android:color/white"
+        android:fontFamily="serif-monospace"
+        android:layout_margin="8dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/udacity"
+        android:scaleType="centerCrop"
+        android:layout_weight="1" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/info"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textColor="@android:color/white"
+        android:layout_margin="8dp"
+        android:fontFamily="monospace" />
+
+</LinearLayout>

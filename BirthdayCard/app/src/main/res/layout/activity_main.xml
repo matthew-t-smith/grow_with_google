@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.birthdaycard.MainActivity"
+    android:background="#FFF9C4">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/photo"
+        android:text="Happy Birthday, \n Haley!"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        android:textColor="#1B5E20"/>
+    <!--TODO: This particular image is carrying a different height than specified... -->
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="360dp"
+        android:layout_height="240dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/rabbit" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/photo"
+        android:text="Love, \n Matthew"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        android:textColor="#1B5E20" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="8dp"
+        android:text="@string/photo_credit" />
+
+</RelativeLayout>

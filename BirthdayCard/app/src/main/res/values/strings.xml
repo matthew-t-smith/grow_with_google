@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">BirthdayCard</string>
+    <string name="photo_credit">Photo by <a href="https://unsplash.com/photos/UqM8A0sgVZk?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Leximphoto</a> on <a href="https://unsplash.com/search/photos/rabbit?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></string>
+</resources>
