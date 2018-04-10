@@ -10,7 +10,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:scaleType="centerCrop"
-        android:src="@drawable/tennis"/>
+        android:src="@drawable/tennis"
+        android:background="@color/colorPrimaryDark" />
 
     <LinearLayout
         android:id="@+id/game_score"
@@ -25,11 +26,13 @@
             android:orientation="vertical">
 
             <EditText
+                android:id="@+id/player_a"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:hint="Name 1"
                 android:textSize="24sp"
+                android:textAlignment="center"
                 android:textColorHint="@android:color/white"
                 android:alpha="0.8"
                 android:textColor="@android:color/white"
@@ -37,7 +40,7 @@
                 android:layout_gravity="center_horizontal" />
 
             <TextView
-                android:id="@+id/team_a_score"
+                android:id="@+id/a_game_score"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -61,19 +64,17 @@
                 android:onClick="score" />
 
             <TextView
-                android:id="@+id/set_score_a_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="48dp"
                 android:layout_marginBottom="4dp"
-                android:text="0"
-                android:textSize="45sp"
+                android:text="Set"
+                android:textSize="24sp"
                 android:textColor="@android:color/white"
                 android:fontFamily="sans-serif-light"
                 android:layout_gravity="center_horizontal"/>
-
             <TextView
-                android:id="@+id/set_score_a_2"
+                android:id="@+id/a_set_score"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
@@ -85,7 +86,18 @@
                 android:layout_gravity="center_horizontal"/>
 
             <TextView
-                android:id="@+id/set_score_a_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:text="Match"
+                android:textSize="24sp"
+                android:textColor="@android:color/white"
+                android:fontFamily="sans-serif-light"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:id="@+id/a_match_score"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
@@ -105,11 +117,13 @@
             android:orientation="vertical" >
 
             <EditText
+                android:id="@+id/player_b"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:hint="Name 2"
                 android:textSize="24sp"
+                android:textAlignment="center"
                 android:textColorHint="@android:color/white"
                 android:alpha="0.8"
                 android:textColor="@android:color/white"
@@ -117,7 +131,7 @@
                 android:layout_gravity="center_horizontal" />
 
             <TextView
-                android:id="@+id/b_point"
+                android:id="@+id/b_game_score"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -141,19 +155,18 @@
                 android:onClick="score" />
 
             <TextView
-                android:id="@+id/set_score_b_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="48dp"
                 android:layout_marginBottom="4dp"
-                android:text="0"
-                android:textSize="45sp"
+                android:text="Set"
+                android:textSize="24sp"
                 android:textColor="@android:color/white"
                 android:fontFamily="sans-serif-light"
                 android:layout_gravity="center_horizontal"/>
 
             <TextView
-                android:id="@+id/set_score_b_2"
+                android:id="@+id/b_set_score"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
@@ -165,7 +178,18 @@
                 android:layout_gravity="center_horizontal"/>
 
             <TextView
-                android:id="@+id/set_score_b_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:text="Match"
+                android:textSize="24sp"
+                android:textColor="@android:color/white"
+                android:fontFamily="sans-serif-light"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:id="@+id/b_match_score"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
@@ -199,5 +223,15 @@
         android:textSize="12sp"
         android:textColor="@android:color/white"
         android:text="@string/photo_credit"/>
+
+    <TextView
+        android:id="@+id/winner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/colorAccent"
+        android:textSize="56sp"
+        android:layout_centerInParent="true"
+        android:text="" />
 
 </RelativeLayout>
