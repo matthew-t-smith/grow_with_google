@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Technical Interview Quiz App</string>
+    <string name="title">Technical Interview Quiz</string>
+    <string name="question1">Question 1: If we have a tree of n nodes, how many edges will it have?</string>
+    <string name="question2">Question 2: Which of the following data structures can handle updates
+        and queries in log(n) time on an array?</string>
+    <string name="question3">Question 3: Of the following data structures, which has a Last in First
+        Out ordering? In other words, the one that came in last will be the first to be popped.</string>
+    <string name="question4">Question 4: An RPC (remote procedure call) is initiated by the...</string>
+    <string name="question5">Question 5: What is the default value of a static integer variable of a
+        class in Java?</string>
+    <string name="question6">Question 6: In Java, to prevent any method from overriding, we declare
+        the method as...</string>
+    <string name="question7">Question 7: Which of the following variable declaration would NOT
+        compile in a Java program?</string>
+    <string name="question8">Question 8: Re-implementing an inherited method in a subclass to
+        perform a different task from the parent class is called what?</string>
+    <!-- Questions come from HackerRank.com & CodingCompiler.com-->
+</resources>
