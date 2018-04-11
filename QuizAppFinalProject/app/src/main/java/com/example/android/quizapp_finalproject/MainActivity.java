@@ -134,5 +134,7 @@ public class MainActivity extends AppCompatActivity {
         seventh.clearCheck();
         RadioGroup eight = (RadioGroup) findViewById(R.id.question_8);
         eight.clearCheck();
+        CheckBox box = (CheckBox) findViewById(R.id.checkbox);
+        box.setChecked(false);
     }
 }
